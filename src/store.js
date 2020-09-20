@@ -12,9 +12,10 @@ const reducer = (state, action) => {
         count: state.count + 1,
       }
     case 'delete':
+      const newWishList = state.wishlist.filter((wish) => wish != action.id)
       return {
-        wishlist: state.wishlist.filter((wish) => wish !== action.id),
-        count: state.wishlist.count || 0,
+        wishlist: newWishList,
+        count: newWishList.length,
       }
 
     default:
