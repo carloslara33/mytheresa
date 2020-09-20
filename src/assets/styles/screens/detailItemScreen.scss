@@ -1,0 +1,70 @@
+.detailScreen {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: $primary-padding;
+
+  &.playing {
+    font-family: cursive;
+    color: $playing-color;
+    button {
+      background-color: $playing-color;
+    }
+  }
+
+  &.popular {
+    font-family: fantasy;
+    color: $popular-color;
+    button {
+      background-color: $popular-color;
+    }
+  }
+
+  &.rated {
+    font-family: monospace;
+    color: $rated-color;
+    button {
+      background-color: $rated-color;
+    }
+  }
+
+  button {
+    &:hover {
+      background-color: $secondary-color;
+    }
+    &:disabled {
+      background-color: $primary-color;
+    }
+  }
+
+  &__image {
+    flex: 0 0 25%;
+  }
+
+  &__description {
+    font-size: $h4-size;
+    &-wrapper {
+      flex: 0 0 calc(75% - 4rem);
+      padding-left: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+  }
+
+  &__aditionalInfo {
+    margin-top: 2rem;
+    ul {
+      list-style: none;
+      display: flex;
+      flex: 1 0 100%;
+      flex-wrap: wrap;
+      padding-left: 0;
+    }
+    li {
+      flex: 0 0 50%;
+      padding: 0.5rem 0;
+    }
+  }
+}

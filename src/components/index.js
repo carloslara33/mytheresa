@@ -1,0 +1,6 @@
+export { default as App } from './app.jsx'
+export { default as Loading } from './loading.jsx'
+export { default as Header } from './header.jsx'
+export { default as Carousel } from './carousel/carousel.jsx'
+export { default as CarouselItem } from './carousel/carouselItem.jsx'
+export { default as WishItem } from './wishItem.jsx'
